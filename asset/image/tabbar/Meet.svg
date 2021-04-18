@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/32px/Map pin/Grey</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="Component/Navigation/Under" transform="translate(-159.000000, -14.000000)" fill="#000000">
+            <g id="Icon/32px/Gift/Grey" transform="translate(156.000000, 10.000000)">
+                <g transform="translate(3.000000, 4.000000)" id="Shape">
+                    <path d="M3,12 L3,24 L12,24 L12,12 L3,12 Z M13,12 L13,24 L22,24 L22,12 L13,12 Z M23,12 L23,25 L2,25 L2,12 L0,12 L0,5 L3.15376,5 L3.105263,4.289474 C3.105263,1.64432979 4.85484211,0 7.5,0 C10.1451579,0 11.6618421,0.609123158 12.5,2 C13.3380211,0.609109474 14.3548421,0 17,0 C19.6451579,0 21.894737,1.64431611 21.894737,4.289474 L21.846295,5 L25,5 L25,12 L23,12 Z M1,6 L1,11 L12,11 L12,6 L1,6 Z M24,11 L24,6 L13,6 L13,11 L24,11 Z M21,5 L21,3.80958904 C21,1.84254358 18.93298,1 17,1 C15.06702,1 13,1.84254358 13,3.80958904 L13,5 L21,5 Z M12,5 L12,3.80958904 C12,1.84254358 9.932994,1 8,1 C6.067006,1 4,1.84254358 4,3.80958904 L4,5 L12,5 Z" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

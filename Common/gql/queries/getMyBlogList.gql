@@ -1,0 +1,59 @@
+query getMyBlogList(
+  $language: String!
+  $member_code: Int
+  $tag_code: Int
+  $order_type: Int
+  $limit: Int
+  $offset: Int
+) {
+  getMyBlogList(
+    language: $language
+    member_code: $member_code
+    tag_code: $tag_code
+    order_type: $order_type
+    limit: $limit
+    offset: $offset
+  ) {
+    result
+    count
+    blog {
+      code
+      updated_at
+      created_at
+      images {
+        code
+        origin_path
+      }
+      tags {
+        code
+        type
+        translations {
+          name
+          language
+        }
+      }
+      translations {
+        updated_at
+        created_at
+        code
+        title
+        sub_title
+        description
+        content
+        language
+      }
+      writer {
+        email
+        name
+        picture
+        introduce
+      }
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+  }
+}

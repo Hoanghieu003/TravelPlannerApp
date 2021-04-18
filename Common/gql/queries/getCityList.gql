@@ -1,0 +1,13 @@
+query getCityist($type: Int!, $name: String) {
+  getCityList(type: $type, name: $name) {
+    code
+    type
+    score
+    country_code
+    translations {
+      tag_code
+      name
+      language
+    }
+  }
+}

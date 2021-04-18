@@ -1,0 +1,3 @@
+mutation PlusShareCount($type: String!, $code: Int!) {
+  PlusShareCount(type: $type, code: $code)
+}

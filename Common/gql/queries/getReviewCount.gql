@@ -1,0 +1,6 @@
+query getReviewCount($where: String!, $code: Int!, $language: String) {
+  getReviewCount(where: $where, code: $code, language: $language) {
+    result
+    count
+  }
+}

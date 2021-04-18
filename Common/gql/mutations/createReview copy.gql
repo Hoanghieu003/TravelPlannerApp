@@ -1,0 +1,34 @@
+mutation createReview(
+  $parentWhere: String
+  $parentCode: Int
+  $where: String!
+  $code: Int!
+  $star_rating: Float!
+  $content: String!
+  $language: String
+) {
+  createReview(
+    parentWhere: $parentWhere
+    parentCode: $parentCode
+    where: $where
+    code: $code
+    star_rating: $star_rating
+    content: $content
+    language: $language
+  ) {
+    result
+    review {
+      code
+      spot_code
+      blog_code
+      review_code
+      star_rating
+      like_count
+      created_at
+      translations {
+        review_content
+        language
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+query getSpotReserveList(
+  $isActive: Int
+  $search: String
+  $categoryCode: Int
+  $cityCode: Int
+  $types: [Int]
+  $language: String
+  $offset: Int
+  $limit: Int
+  $page: Int
+) {
+  getSpotReserveList(
+    isActive: $isActive
+    search: $search
+    categoryCode: $categoryCode
+    cityCode: $cityCode
+    types: $types
+    language: $language
+    offset: $offset
+    limit: $limit
+    page: $page
+  ) {
+    result
+    count
+
+    spots {
+      code
+
+      review_total_score
+      rating_review_count
+
+      spot_reserve {
+        code
+        spot_code
+        is_active
+      }
+
+      translations {
+        spot_name
+        is_default
+        language
+      }
+
+      like_members {
+        id
+        nickname
+      }
+
+      tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+
+      images {
+        origin_path
+        url
+      }
+    }
+  }
+}

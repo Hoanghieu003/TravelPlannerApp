@@ -1,0 +1,76 @@
+query getBlogList(
+  $is_translation: Int!
+  $language: String!
+  $search: String
+  $is_publish: Int
+  $tag_code: Int
+  $limit: Int
+  $isRecommend: Boolean
+  $offset: Int
+  $reserve_only: Boolean
+  $order_type: Int
+  $cityCode: Int
+  $categoryCode: Int
+  $exceptionCode: [Int]
+  $isAdminPage: Int
+  $startDate: String
+  $endDate: String
+) {
+  getBlogList(
+    is_translation: $is_translation
+    language: $language
+    search: $search
+    is_publish: $is_publish
+    tag_code: $tag_code
+    isRecommend: $isRecommend
+    limit: $limit
+    offset: $offset
+    reserve_only: $reserve_only
+    order_type: $order_type
+    cityCode: $cityCode
+    categoryCode: $categoryCode
+    exceptionCode: $exceptionCode
+    isAdminPage: $isAdminPage
+    startDate: $startDate
+    endDate: $endDate
+  ) {
+    count
+    rows {
+      code
+      view_count
+      like_count
+      is_publish
+      created_at
+      
+      images {
+        code
+        origin_path
+        url
+      }
+      blog_tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+      translations {
+        updated_at
+        created_at
+        code
+        title
+        sub_title
+        description
+        content
+        language
+      }
+      writer {
+        nickname
+        name
+      }
+      like_members {
+        id
+      }
+    }
+  }
+}

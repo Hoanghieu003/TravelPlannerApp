@@ -1,0 +1,31 @@
+mutation upsertMeetFriendReply(
+  $code: Int
+  $parent_code: Int
+  $meet_friend_code: Int!
+  $content: String!
+  $language: String!
+) {
+  upsertMeetFriendReply(
+    code: $code
+    parent_code: $parent_code
+    meet_friend_code: $meet_friend_code
+    content: $content
+    language: $language
+  ) {
+    result
+    message
+    meetFriendReply {
+      code
+      parent_code
+      meet_friend_code
+      content
+      language
+      writer {
+        code
+        nickname
+        picture
+        id
+      }
+    }
+  }
+}

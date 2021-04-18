@@ -1,0 +1,57 @@
+query getMySpotList(
+  $member_code: Int
+  $order_type: Int
+  $language: String!
+  $tag_code: Int
+  $limit: Int
+  $offset: Int
+  $info: Boolean
+) {
+  getMySpotList(
+    member_code: $member_code
+    order_type: $order_type
+    language: $language
+    tag_code: $tag_code
+    limit: $limit
+    offset: $offset
+    info: $info
+  ) {
+    result
+    count
+    spots {
+      code
+      is_confirm
+      review_total_score
+      rating_review_count
+
+      created_at
+      updated_at
+
+      translations {
+        title_price
+        spot_name
+        language
+      }
+
+      tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+
+      images {
+        spot_code
+        origin_path
+      }
+
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+  }
+}

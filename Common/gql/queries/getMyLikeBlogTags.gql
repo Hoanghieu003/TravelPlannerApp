@@ -1,0 +1,17 @@
+query getMyLikeBlogTags($member_code: Int, $tag_type: Int, $language: String!) {
+  getMyLikeBlogTags(
+    member_code: $member_code
+    tag_type: $tag_type
+    language: $language
+  ) {
+    tags {
+      code
+      type
+
+      translations {
+        name
+        language
+      }
+    }
+  }
+}

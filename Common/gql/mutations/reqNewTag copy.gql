@@ -1,0 +1,6 @@
+mutation reqNewTag($tag: String!) {
+  reqNewTag(tag: $tag) {
+    member_code
+    tag
+  }
+}

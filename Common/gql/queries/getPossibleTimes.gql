@@ -1,0 +1,6 @@
+query getPossibleTimes($spotCode: Int!, $requestDate: String! ) {
+	getPossibleTimes(spotCode: $spotCode, requestDate: $requestDate) {
+		result
+		times
+	}
+}

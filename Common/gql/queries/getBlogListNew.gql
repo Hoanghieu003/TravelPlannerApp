@@ -1,0 +1,73 @@
+query getBlogListNew(
+  $limit: Int
+  $offset: Int
+  $tags: [Int]
+  $order: String
+  $isPublish: Boolean
+  $isRecommend: Boolean
+  $excludeTags: [Int]
+  $languages: [String!]
+  $isMine: Boolean
+  $isMain: Boolean
+  $title: String
+  $types: [Int]
+) {
+  getBlogListNew(
+    limit: $limit
+    offset: $offset
+    tags: $tags
+    excludeTags: $excludeTags
+    isMain: $isMain
+    order: $order
+    isPublish: $isPublish
+    isRecommend: $isRecommend
+    languages: $languages
+    isMine: $isMine
+    title: $title
+  ) {
+    count
+    blogs {
+      code
+      view_count
+      like_count
+      is_publish
+      created_at
+      like
+      images(isMain: $isMain) {
+        code
+        origin_path
+        url
+      }
+      tags(types: $types) {
+        code
+        type
+        country_code
+        translations(languages: $languages) {
+          code
+          tag_code
+          name
+          language
+          created_at
+          updated_at
+        }
+      }
+      translations(languages: $languages) {
+        renewal_date
+        updated_at
+        created_at
+        code
+        title
+        main_image_url
+        sub_title
+        description
+        content
+        language
+      }
+      writer {
+        nickname
+        name
+      }
+      like_members
+    }
+  }
+}

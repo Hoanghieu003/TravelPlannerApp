@@ -1,0 +1,57 @@
+query getTagRecommendList($type: Int!, $limit: Int, $languages: [String], $isRecommend: Boolean) {
+  getTagRecommendList(type: $type, limit: $limit, isRecommend: $isRecommend) {
+    result
+    count
+    tags {
+      code
+      type
+      country_code
+      score
+      is_recommend
+      created_at
+      updated_at
+      parent_code
+      children {
+        code
+        type
+        country_code
+        score
+        is_recommend
+        created_at
+        updated_at
+        country {
+          code
+          country_code
+          name
+          language
+          created_at
+          updated_at
+        }
+        translations(languages: $languages) {
+          code
+          tag_code
+          name
+          language
+          created_at
+          updated_at
+        }
+      }
+      country {
+        code
+        country_code
+        name
+        language
+        created_at
+        updated_at
+      }
+      translations(languages: $languages) {
+        code
+        tag_code
+        name
+        language
+        created_at
+        updated_at
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+query getSpotReserve($code: Int!, $language: String, $is_reserve: Boolean) {
+	getSpotReserve(code: $code, language: $language, is_reserve: $is_reserve) {
+		result
+
+		spot {
+			code
+			address
+			telephone
+			opening_hours
+			created_at
+			updated_at
+
+			spot_reserve {
+				code
+				spot_code
+				notice_email
+				type
+				is_require_date
+				is_require_time
+				outside_url
+				is_require_payment
+				is_require_confirm
+				is_require_day
+				refund_percents
+				limit_payment_second
+				reserve_hours
+				min_order_count
+				max_order_count
+				is_active
+				time_unit
+				reserve_limit_date
+
+				time_unit
+				reserve_limit_date
+				required_info
+
+				is_require_period
+				reserve_period_hours
+				is_possible_period
+				is_impossible_period
+				unable_days
+			}
+
+			options {
+				code
+				p_code
+				spot_code
+				name
+				information
+				images {
+					main_image
+					origin_path
+					url
+				}
+				price
+				discount_price
+				is_reserve
+				is_dropdown
+				is_require_payment
+				refund_data
+				fees
+				settlement_price
+				created_at
+				updated_at
+			}
+
+			translations {
+				code
+				spot_code
+				is_default
+				spot_name
+				price
+				language
+				more_infomation
+				precautions
+        is_publish
+        spot_search_title
+        title_price
+			}
+		}
+	}
+}

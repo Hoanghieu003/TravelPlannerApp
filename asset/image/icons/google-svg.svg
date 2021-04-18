@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/40px/Google-circle/Grey</title>
+    <g id="Creatrip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="2-Log-in/Main" transform="translate(-36.000000, -496.000000)">
+            <g id="Group" transform="translate(35.000000, 495.000000)">
+                <g id="Icon/40px/Google-circle/Grey">
+                    <g id="Icon/32px/Google-circle/Grey" transform="translate(1.000000, 1.000000)">
+                        <circle id="Oval" stroke-opacity="0.2" stroke="#000000" fill-rule="nonzero" cx="19" cy="19" r="18.5"></circle>
+                        <path d="M19.0707483,17.4380952 L19.0707483,20.8666667 L24.8579203,20.8666667 C24.6246842,22.3380952 23.1086492,25.1809524 19.0707483,25.1809524 C15.5867833,25.1809524 12.7442176,22.352381 12.7442176,18.8666667 C12.7442176,15.3809524 15.5867833,12.552381 19.0707483,12.552381 C21.0532556,12.552381 22.3797862,13.3809524 23.1378037,14.0952381 L25.907483,11.4809524 C24.1290574,9.85238098 21.8258503,8.86666667 19.0707483,8.86666667 C13.4293489,8.86666667 8.86666667,13.3380952 8.86666667,18.8666667 C8.86666667,24.3952381 13.4293489,28.8666667 19.0707483,28.8666667 C24.9599612,28.8666667 28.8666667,24.8095238 28.8666667,19.0952381 C28.8666667,18.4380952 28.7937804,17.9380952 28.7063169,17.4380952 L19.0707483,17.4380952 Z" id="Combined-Shape-path" fill-opacity="0.2" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

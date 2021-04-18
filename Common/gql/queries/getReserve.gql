@@ -1,0 +1,84 @@
+query getReserve($code: Int!, $language: String) {
+  getReserveDetail(code: $code) {
+    result
+    reserve {
+      code
+      member_code
+      spot_code
+      name
+      country
+      email
+      social
+      user_request
+      reserve_code
+      voucher_code
+      delivery_address
+      telephone
+      used
+      flight_number
+      reserve_date
+      limit_payment
+      total_payment
+      order_number
+      payment_id
+      status
+      hasInfos {
+        code
+        name
+        koName
+        value
+        info {
+          code
+          is_default
+          is_fix
+          type
+          option
+          created_at
+          updated_at
+          translations(languages: [$language, "ko"]) {
+            code
+            required_info_code
+            language
+            header
+            description
+            created_at
+            updated_at
+          }
+        }
+      }
+      spot {
+        code
+        reserve_info {
+          refund_percents
+          type
+          is_require_date
+          is_require_time
+          is_require_payment
+          is_require_confirm
+          time_unit
+          reserve_limit_date
+          required_info
+          __typename
+        }
+        translations(languages: [$language, "ko"]) {
+          language
+          spot_name
+          price
+          __typename
+        }
+        __typename
+      }
+      reserve_items {
+        name
+        ko_name
+        show_name
+        price
+        discount_price
+        count
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

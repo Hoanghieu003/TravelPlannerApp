@@ -1,0 +1,30 @@
+query getChildTagList($parent_code: Int!, $languages: [String]) {
+  getChildTagList(parent_code: $parent_code) {
+    result
+    tags {
+      code
+      type
+      country_code
+      score
+      is_recommend
+      created_at
+      updated_at
+      country {
+        code
+        country_code
+        name
+        language
+        created_at
+        updated_at
+      }
+      translations(languages: $languages) {
+        code
+        tag_code
+        name
+        language
+        created_at
+        updated_at
+      }
+    }
+  }
+}

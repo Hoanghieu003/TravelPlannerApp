@@ -1,0 +1,29 @@
+query getSpotOptionList($spot_code: Int!) {
+	getSpotOptionList(spot_code: $spot_code) {
+		result
+		options {
+			code
+			p_code
+			spot_code
+			name
+			information
+			price
+			discount_price
+			is_reserve
+			is_dropdown
+			is_require_payment
+			refund_data
+			unable_weeks
+			unable_toggle
+			fees
+			settlement_price
+			images {
+				code
+				option_code
+				origin_path
+				main_image
+				url
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+query getAvgRating($where: String!, $code: Int!, $language: String) {
+  getAvgRating(where: $where, code: $code, language: $language) {
+    result
+    avg
+  }
+}

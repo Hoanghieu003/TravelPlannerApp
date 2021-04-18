@@ -1,0 +1,11 @@
+query getImageList($whereImage: String, $code: Int!) {
+  getImageList(whereImage: $whereImage, code: $code) {
+    result
+    imageList {
+      main_image
+      origin_path
+      url
+      created_at
+    }
+  }
+}

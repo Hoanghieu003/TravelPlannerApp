@@ -1,0 +1,6 @@
+mutation deleteMemberTag($code: Int!) {
+  deleteMemberTag(code: $code) {
+    result
+    msg
+  }
+}

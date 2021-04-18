@@ -1,0 +1,6 @@
+query getPossbileDates($spotCode: Int!, $requestDate: String! ) {
+	getPossibleDates(spotCode: $spotCode, requestDate: $requestDate) {
+		result
+		dates
+	}
+}

@@ -1,0 +1,25 @@
+query getTagList(
+  $types: [Int!]
+  $language: String
+  $name: String
+  $limit: Int
+  $isMyLanguage: String
+) {
+  getTagList(
+    types: $types
+    language: $language
+    name: $name
+    limit: $limit
+    isMyLanguage: $isMyLanguage
+  ) {
+    code
+    type
+    score
+    country_code
+    translations {
+      tag_code
+      name
+      language
+    }
+  }
+}

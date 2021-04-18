@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'example' do
+  # Pods for example
+  pod 'LineSDK', '~> 5.0.0'
+  
+end

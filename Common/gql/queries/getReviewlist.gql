@@ -1,0 +1,82 @@
+query getReviewList(
+  $where: String!
+  $code: Int!
+  $offset: Int
+  $limit: Int
+  $language: String
+  $forum: Boolean
+) {
+  getReviewList(
+    where: $where
+    code: $code
+    offset: $offset
+    limit: $limit
+    language: $language
+    forum: $forum
+  ) {
+    result
+    reviews {
+      code
+      is_locals
+      star_rating
+      created_at
+      writer {
+        code
+        id
+        nickname
+        level
+        email
+        picture
+        introduce
+        home_tag_code
+        home {
+          code
+          type
+          country_code
+          score
+          translations {
+            code
+            tag_code
+            name
+            language
+          }
+        }
+      }
+      translations {
+        language
+        review_content
+      }
+      childReview {
+        code
+        star_rating
+        created_at
+        writer {
+          code
+          id
+          nickname
+          email
+          level
+          picture
+          introduce
+          home_tag_code
+          home {
+            code
+            type
+            country_code
+            score
+            translations {
+              code
+              tag_code
+              name
+              language
+            }
+          }
+        }
+        translations {
+          language
+          review_content
+        }
+      }
+    }
+  }
+}

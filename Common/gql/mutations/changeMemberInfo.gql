@@ -1,0 +1,20 @@
+mutation changeMemberInfo(
+  $password: String!
+  $email: String
+  $new_password: String
+  $nickname: String
+  $name: String
+  $introduce: String
+) {
+  changeMemberInfo(
+    password: $password
+    email: $email
+    new_password: $new_password
+    nickname: $nickname
+    name: $name
+    introduce: $introduce
+  ) {
+    result
+    message
+  }
+}

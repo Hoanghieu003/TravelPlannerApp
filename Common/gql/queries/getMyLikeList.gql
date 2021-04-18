@@ -1,0 +1,84 @@
+query getMyLikeList(
+  $member_code: Int
+  $type: Int!
+  $language: String!
+  $tag_type: Int
+  $order: String
+) {
+  getMyLikeList(
+    member_code: $member_code
+    type: $type
+    language: $language
+    tag_type: $tag_type
+    order: $order
+  ) {
+    result
+    count
+    likes {
+      spot {
+        code
+        is_confirm
+        translations {
+          spot_name
+          language
+        }
+        tags {
+          type
+          country_code
+          translations {
+            name
+            language
+          }
+        }
+        images {
+          origin_path
+        }
+        like_members {
+          id
+          email
+          name
+          nickname
+        }
+      }
+      blog {
+        code
+        updated_at
+        created_at
+        images {
+          code
+          origin_path
+        }
+        tags {
+          code
+          type
+          translations {
+            name
+            language
+          }
+        }
+        translations {
+          updated_at
+          created_at
+          code
+          title
+          sub_title
+          description
+          content
+          language
+        }
+        writer {
+          email
+          name
+          picture
+          introduce
+        }
+        like_members {
+          id
+          email
+          name
+          nickname
+        }
+      }
+    }
+  }
+}

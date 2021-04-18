@@ -1,0 +1,70 @@
+mutation createReserve(
+  $spotName: String!
+  $spotCode: Int!
+  $name: String!
+  $country: String!
+  $email: String!
+  $social: String!
+  $request: String
+  $reserveItem: String!
+  $waitingDate: String!
+  $platform: String!
+  $version: String
+  $birthday: String
+  $deliveryAddress: String
+  $telephone: String
+  $nationalityName: String
+  $hotelName: String
+  $flightNumber: String
+  $gender: Int
+) {
+  createReserve(
+    spotName: $spotName
+    spotCode: $spotCode
+    name: $name
+    country: $country
+    email: $email
+    social: $social
+    request: $request
+    reserveItem: $reserveItem
+    waitingDate: $waitingDate
+    platform: $platform
+    version: $version
+    birthday: $birthday
+    deliveryAddress: $deliveryAddress
+    telephone: $telephone
+    nationalityName: $nationalityName
+    hotelName: $hotelName
+    flightNumber: $flightNumber
+    gender: $gender
+  ) {
+    result
+    exim_fgkey
+    reserve {
+      code
+      member_code
+      spot_code
+      name
+      country
+      email
+      social
+      user_request
+      reserve_item
+      reserve_code
+      reserve_date
+      waiting_date
+      limit_payment
+      total_payment
+      order_number
+      status
+      platform
+      birthday
+      delivery_address
+      telephone
+      nationality_name
+      hotel_name
+      flight_number
+      gender
+    }
+  }
+}

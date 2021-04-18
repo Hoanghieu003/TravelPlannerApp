@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="56px" viewBox="0 0 20 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/32px/People/Grey</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="Component/Navigation/Under" transform="translate(-227.000000, -12.000000)" fill="#000000">
+            <g id="Icon/32px/Map-pin/Grey" transform="translate(221.000000, 10.000000)">
+                <g transform="translate(6.000000, 2.000000)" id="Shape">
+                    <path d="M10,6 C11.5,6 13,7.5 13,9 C13,10.5 11.5,12 10,12 C8.5,12 7,10.5 7,9 C7,7.5 8.5,6 10,6 Z M10,7 C8.89546667,7 8,7.89544 8,9 C8,10.1045333 8.89546667,11 10,11 C11.1045333,11 12,10.1045333 12,9 C12,7.89544 11.1045333,7 10,7 Z M2.5,14 L10,26 L17.5,14 C18.5,12.0322846 19,10.5322846 19,9.5 C19,5.00598146 14.7339221,1 10,1 C5.26612468,1 1,5.00598146 1,9.5 C1,10.5322846 1.5,12.0322846 2.5,14 Z M10,28.000013 L1.5,14.5 C0.576107692,13.0510733 0,11.3947948 0,9.57312077 C0,4.28604063 4.47715385,1.3e-05 10,1.3e-05 C15.5227692,1.3e-05 20,4.28604063 20,9.57312077 C20,11.3947948 19.4226154,13.0503369 18.5,14.5 L10,28.000013 Z" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

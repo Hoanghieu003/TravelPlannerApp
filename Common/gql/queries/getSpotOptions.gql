@@ -1,0 +1,53 @@
+query getSpotOptions($date: String!, $spot_code: Int!) {
+  getSpotOptions(date: $date, spot_code: $spot_code) {
+    result
+    hours
+    options {
+      code
+      p_code
+      spot_code
+      name
+      information
+      price
+      discount_price
+      is_reserve
+      is_dropdown
+      is_require_payment
+      refund_data
+      unable_weeks
+      unable_toggle
+      fees
+      settlement_price
+      images {
+        code
+        spot_code
+        blog_code
+        option_code
+        origin_path
+        main_image
+        url
+      }
+      week_prices {
+        code
+        option_code
+        price_date_index
+        price_date
+        price
+        discount_price
+        fees
+        settlement_price
+      }
+
+      day_prices {
+        code
+        option_code
+        price_date_index
+        price_date
+        price
+        discount_price
+        fees
+        settlement_price
+      }
+    }
+  }
+}

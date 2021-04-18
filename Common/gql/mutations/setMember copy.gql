@@ -1,0 +1,37 @@
+mutation setMember(
+  $password: String
+  $nickname: String
+  $name: String
+  $picture: String
+  $travel: String
+  $introduce: String
+  $home_tag_code: Int
+) {
+  setMember(
+    password: $password
+    nickname: $nickname
+    name: $name
+    picture: $picture
+    travel: $travel
+    introduce: $introduce
+    home_tag_code: $home_tag_code
+  ) {
+    result
+    member {
+      code
+      id
+      password
+      nickname
+      email
+      name
+      level
+      picture
+      deny_login
+      is_email_auth
+      email_auth_code
+      is_reset_password
+      password_auth_code
+      introduce
+    }
+  }
+}

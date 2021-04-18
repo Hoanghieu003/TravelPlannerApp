@@ -1,0 +1,7 @@
+mutation refundReserve($reserveCode: Int!, $refundPayment: Int) {
+  refundReserve(reserveCode: $reserveCode, refundPayment: $refundPayment) {
+    result
+    message
+    error
+  }
+}

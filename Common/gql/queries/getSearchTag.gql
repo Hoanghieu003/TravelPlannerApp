@@ -1,0 +1,33 @@
+query searchTag(
+  $name: String
+  $page: Int
+  $limit: Int
+  $type: Int
+  $language: String
+) {
+  searchTag(
+  name: $name
+  page: $page
+  limit: $limit
+  type: $type
+  language: $language
+  ) {
+    result
+    count
+    tags {
+      code
+      type
+      score
+      is_recommend
+      created_at
+      updated_at
+      country_code
+      translations (languages: [$language]) {
+        code
+        tag_code
+        name
+        language
+      }
+    }
+  }
+}

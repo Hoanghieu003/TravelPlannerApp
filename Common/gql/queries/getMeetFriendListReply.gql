@@ -1,0 +1,15 @@
+query getMeetFriendListReplyOn($page: Int!, $count: Int!, $language: String) {
+	getMeetFriendListReplyOn(page: $page, limit: $count, language: $language) {
+		result
+		count
+		message
+		meetFriends {
+			code
+			title
+			view_count
+			replies_count
+			created_at
+			updated_at
+		}
+	}
+}

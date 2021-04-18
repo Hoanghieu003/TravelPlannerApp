@@ -1,0 +1,32 @@
+query getAdvertiseInfo($code: Int!, $language: String!) {
+  getAdvertiseInfo(code: $code, language: $language) {
+    result
+    advertisement {
+      code
+      type
+      name
+      image
+      language
+      url
+      period_from
+      period_to
+      translations {
+        name
+        title
+        image
+        language
+        url
+      }
+      spot_code
+      blog_code
+      tags {
+        code
+        type
+        translations {
+          name
+          language
+        }
+      }
+    }
+  }
+}

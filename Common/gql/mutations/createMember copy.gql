@@ -1,0 +1,16 @@
+mutation createMember(
+  $id: String!
+  $password: String!
+  $email: String!
+  $locale: String!
+) {
+  createMember(id: $id, password: $password, email: $email, locale: $locale) {
+    result
+
+    member {
+      id
+      password
+      email
+    }
+  }
+}

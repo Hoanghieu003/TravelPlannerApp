@@ -1,0 +1,13 @@
+query getSpotReserveTags($language: String) {
+  getSpotReserveTags(language: $language) {
+    tags {
+      code
+      type
+
+      translations {
+        name
+        language
+      }
+    }
+  }
+}

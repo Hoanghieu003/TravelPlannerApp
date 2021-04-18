@@ -1,0 +1,18 @@
+query getExchange($code: Int, $language: String) {
+  getExchange(code: $code, language: $language) {
+    code
+    writer
+    buy_price
+    sell_price
+    order_no
+
+    created_at
+    updated_at
+
+    translations {
+      code
+      name
+      language
+    }
+  }
+}

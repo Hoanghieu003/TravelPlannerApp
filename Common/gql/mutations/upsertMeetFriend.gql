@@ -1,0 +1,19 @@
+mutation upsertMeetFriend($title: String!, $content: String!, $language:String) {
+  upsertMeetFriend(title: $title, content: $content, language: $language) {
+    result
+    message
+    meetFriend{
+      code
+      title
+      content
+      view_count
+      language
+      member_code
+      is_notice
+      is_deleted
+      created_at
+      updated_at
+      replies_count
+    }
+    }
+  }

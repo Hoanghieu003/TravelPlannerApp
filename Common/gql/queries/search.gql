@@ -1,0 +1,139 @@
+query search(
+  $search: String
+  $city: String
+  $language: String
+  $spot_offset: Int
+  $spot_limit: Int
+  $blog_offset: Int
+  $blog_limit: Int
+  $order_type: Int
+  $search_reserve: Boolean
+  $is_confirm: Boolean
+  $is_publish: Boolean
+) {
+  search(
+    search: $search
+    city: $city
+    language: $language
+    spot_offset: $spot_offset
+    spot_limit: $spot_limit
+    blog_offset: $blog_offset
+    blog_limit: $blog_limit
+    order_type: $order_type
+    search_reserve: $search_reserve
+    is_confirm: $is_confirm
+    is_publish: $is_publish
+  ) {
+    blogCount
+    blog {
+      code
+      updated_at
+      created_at
+      view_count
+      images {
+        code
+        origin_path
+        url
+      }
+
+      tags {
+        code
+        type
+        translations {
+          name
+          language
+        }
+      }
+
+      blog_tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+
+      translations {
+        updated_at
+        created_at
+        code
+        title
+        sub_title
+        description
+        content
+        language
+      }
+
+      writer {
+        email
+        name
+        nickname
+        picture
+        introduce
+      }
+
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+
+    spotCount
+    spot {
+      code
+      spot_reserve {
+        code
+        spot_code
+        is_active
+      }
+      is_confirm
+      created_at
+      updated_at
+      review_total_score
+      rating_review_count
+      like_count
+      view_count
+      is_recommend
+
+      latitude
+      longitude
+
+      translations {
+        spot_name
+        language
+        title_price
+        price
+      }
+
+      tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+
+      images {
+        spot_code
+        origin_path
+        url
+      }
+
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+      options {
+        p_code
+        spot_code
+        code
+        price
+        discount_price
+      }
+    }
+  }
+}

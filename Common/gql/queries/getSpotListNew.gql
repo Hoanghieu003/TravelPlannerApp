@@ -1,0 +1,85 @@
+query getSpotListNew(
+  $types: [Int]
+  $title: String
+  $limit: Int
+  $offset: Int
+  $tags: [Int]
+  $order: String
+  $languages: [String!]
+  $isReserved: Boolean
+  $isConfirm: Boolean
+  $isRecommend: Boolean
+  $isMine: Boolean
+  $isMain: Boolean
+  $coordinates: coordinatesType
+) {
+  getSpotListNew(
+    types: $types
+    title: $title
+    limit: $limit
+    offset: $offset
+    tags: $tags
+    order: $order
+    languages: $languages
+    isReserved: $isReserved
+    isConfirm: $isConfirm
+    isRecommend: $isRecommend
+    isMine: $isMine
+    coordinates: $coordinates
+  ) {
+    result
+    count
+    spots {
+      code
+      is_confirm
+      review_total_score
+      rating_review_count
+      latitude
+      longitude
+      view_count
+      like_count
+      is_reservable
+      like
+      is_publish
+      created_at
+
+      images(isMain: $isMain) {
+        code
+        origin_path
+        url
+      }
+      tags {
+        code
+        type
+        country_code
+        translations(languages: $languages) {
+          code
+          tag_code
+          name
+          language
+          created_at
+          updated_at
+        }
+      }
+      translations(languages: $languages) {
+        updated_at
+        created_at
+        code
+        spot_name
+        spot_code
+        spot_search_title
+        title_price
+        price
+        more_infomation
+        language
+      }
+      reserve_info {
+        type
+        code
+        spot_code
+        is_active
+      }
+      like_members
+    }
+  }
+}

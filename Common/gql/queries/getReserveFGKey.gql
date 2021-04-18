@@ -1,0 +1,31 @@
+query getReserveFGKey($code: Int!, $spotName: String!, $platform: String!) {
+  getReserveFGKey(code: $code, spotName: $spotName, platform: $platform) {
+    result
+    fgkey
+    reserve {
+      code
+      member_code
+      spot_code
+      name
+      country
+      email
+      social
+      user_request
+      reserve_item
+      reserve_code
+      reserve_date
+      waiting_date
+      limit_payment
+      total_payment
+      order_number
+      flight_number
+      telephone
+      spot {
+        code
+        spot_name_ko
+      }
+      delivery_address
+      status
+    }
+  }
+}

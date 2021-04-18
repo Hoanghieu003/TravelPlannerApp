@@ -1,0 +1,235 @@
+mutation createReview(
+  $parentWhere: String
+  $parentCode: Int
+  $where: String!
+  $code: Int!
+  $star_rating: Float!
+  $content: String!
+  $language: String
+) {
+  createReview(
+    parentWhere: $parentWhere
+    parentCode: $parentCode
+    where: $where
+    code: $code
+    star_rating: $star_rating
+    content: $content
+    language: $language
+  ) {
+    result
+    review {
+      code
+      member_code
+      spot_code
+      is_locals
+      blog_code
+      review_code
+      star_rating
+      like_count
+      created_at
+      updated_at
+      translations {
+        code
+        review_code
+        language
+        is_default
+        review_content
+        created_at
+        updated_at
+      }
+      writer {
+        code
+        id
+        nickname
+        email
+        name
+        country_code
+        home_tag_code
+        password
+        level
+        picture
+        deny_login
+        is_email_auth
+        email_auth_code
+        email_auth_time
+        is_reset_password
+        social_type
+        password_auth_code
+        introduce
+        birthday
+        created_at
+        updated_at
+        country {
+          code
+          country_code
+          name
+          language
+          created_at
+          updated_at
+        }
+        home {
+          code
+          type
+          country_code
+          score
+          created_at
+          updated_at
+          country {
+            code
+            country_code
+            name
+            language
+            created_at
+            updated_at
+          }
+          translations {
+            code
+            tag_code
+            name
+            language
+            created_at
+            updated_at
+          }
+        }
+        member_tags {
+          code
+          member_code
+          tag_code
+          created_at
+          updated_at
+          tag {
+            code
+            type
+            country_code
+            score
+            created_at
+            updated_at
+            country {
+              code
+              country_code
+              name
+              language
+              created_at
+              updated_at
+            }
+            translations {
+              code
+              tag_code
+              name
+              language
+              created_at
+              updated_at
+            }
+          }
+        }
+      }
+      childReview {
+        code
+        member_code
+        spot_code
+        is_locals
+        blog_code
+        review_code
+        star_rating
+        like_count
+        created_at
+        updated_at
+        translations {
+          code
+          review_code
+          language
+          is_default
+          review_content
+          created_at
+          updated_at
+        }
+        writer {
+          code
+          id
+          nickname
+          email
+          name
+          country_code
+          home_tag_code
+          password
+          level
+          picture
+          deny_login
+          is_email_auth
+          email_auth_code
+          email_auth_time
+          is_reset_password
+          social_type
+          password_auth_code
+          introduce
+          birthday
+          created_at
+          updated_at
+          country {
+            code
+            country_code
+            name
+            language
+            created_at
+            updated_at
+          }
+          home {
+            code
+            type
+            country_code
+            score
+            created_at
+            updated_at
+            country {
+              code
+              country_code
+              name
+              language
+              created_at
+              updated_at
+            }
+            translations {
+              code
+              tag_code
+              name
+              language
+              created_at
+              updated_at
+            }
+          }
+          member_tags {
+            code
+            member_code
+            tag_code
+            created_at
+            updated_at
+            tag {
+              code
+              type
+              country_code
+              score
+              created_at
+              updated_at
+              country {
+                code
+                country_code
+                name
+                language
+                created_at
+                updated_at
+              }
+              translations {
+                code
+                tag_code
+                name
+                language
+                created_at
+                updated_at
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

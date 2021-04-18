@@ -1,0 +1,104 @@
+query getReserveList(
+$status: Int
+$language: String
+$search: String
+$offset: Int
+$limit: Int
+$is_my: Boolean
+) {
+	getReserveList(
+	status: $status
+	language: $language
+	search: $search
+	offset: $offset
+	limit: $limit
+	is_my: $is_my
+	) {
+		result
+		count
+		reserves {
+			code
+			name
+			email
+			telephone
+			voucher_code
+			user_request
+			social
+			country
+			status
+			reserve_item
+			total_payment
+			reserve_date
+			reserve_code
+			waiting_date
+			used
+
+			birthday
+			delivery_address
+			nationality_name
+			hotel_name
+			flight_number
+			gender
+
+			payment_id
+
+			member {
+				nickname
+				name
+			}
+
+			reserve_items {
+				ko_name
+				show_name
+				price
+				discount_price
+				count
+			}
+
+			spot {
+				code
+				is_confirm
+				review_total_score
+				rating_review_count
+				latitude
+				spot_name_ko
+        view_count
+
+				longitude
+				spot_reserve {
+					code
+					spot_code
+					is_require_payment
+
+					is_require_date
+					is_require_time
+
+					refund_percents
+				}
+				translations {
+					code
+					title_price
+					spot_name
+					language
+				}
+				tags {
+					code
+					type
+					country_code
+					name
+					language
+				}
+				images {
+					origin_path
+					url
+				}
+				like_members {
+					id
+					email
+					name
+					nickname
+				}
+			}
+		}
+	}
+}

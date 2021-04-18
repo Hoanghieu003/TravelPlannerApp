@@ -1,0 +1,3 @@
+mutation changeLike($nowState: Boolean!, $where: String!, $code: Int!) {
+  changeLike(nowState: $nowState, where: $where, code: $code)
+}

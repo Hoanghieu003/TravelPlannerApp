@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/40px/Facebook-circle/Grey</title>
+    <g id="Creatrip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="2-Log-in/Main" transform="translate(-88.000000, -496.000000)">
+            <g id="Group" transform="translate(35.000000, 495.000000)">
+                <g id="Icon/40px/Facebook-circle/Grey" transform="translate(52.000000, 0.000000)">
+                    <g id="Icon/32px/Facebook-circle/Grey" transform="translate(1.000000, 1.000000)">
+                        <path d="M20.9794761,31 L20.9794761,18.9985949 L24.5295399,18.9985949 L25,14.8628442 L20.9794761,14.8628442 L20.9855075,12.7928612 C20.9855075,11.7141937 21.0953319,11.1362191 22.7555132,11.1362191 L24.9748686,11.1362191 L24.9748686,7 L21.4243021,7 C17.1595008,7 15.6584012,9.00628403 15.6584012,12.3802229 L15.6584012,14.8633126 L13,14.8633126 L13,18.9990633 L15.6584012,18.9990633 L15.6584012,31 L20.9794761,31 Z" id="Combined-Shape-path" fill-opacity="0.2" fill="#000000" fill-rule="nonzero"></path>
+                        <circle id="Oval" stroke-opacity="0.2" stroke="#000000" fill-rule="nonzero" cx="19" cy="19" r="18.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

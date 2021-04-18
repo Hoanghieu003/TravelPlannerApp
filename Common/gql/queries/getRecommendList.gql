@@ -1,0 +1,44 @@
+query getRecommendList($tagType: Int, $categoryType: Int, $language: String!) {
+  getRecommendList(tagType: $tagType, categoryType: $categoryType, language: $language) {
+    result
+    count
+    recommends {
+      code
+      index
+      type
+
+      city {
+        code
+        type
+        score
+        country_code
+
+        country {
+          country_code
+          name
+          language
+        }
+
+        translations {
+          code
+          tag_code
+          name
+          language
+        }
+      }
+
+      category {
+        code
+        type
+        score
+
+        translations {
+          code
+          tag_code
+          name
+          language
+        }
+      }
+    }
+  }
+}

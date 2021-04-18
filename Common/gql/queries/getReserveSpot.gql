@@ -1,0 +1,36 @@
+query getSpotReserve($code: Int, $spotCode: Int, $language: String) {
+  getSpotReserve(code: $code, spotCode: $spotCode, language: $language) {
+    result
+    spot_reserve {
+      code
+      spot_code
+      type
+      is_require_date
+      is_require_time
+      is_require_payment
+      is_require_confirm
+      limit_payment_second
+      reserve_hours
+      min_order_count
+      max_order_count
+      is_active
+      created_at
+      updated_at
+      spot {
+        code
+        address
+        telephone
+        created_at
+        updated_at
+        translations {
+          spot_code
+          is_default
+          spot_name
+          price
+          is_publish
+          language
+        }
+      }
+    }
+  }
+}

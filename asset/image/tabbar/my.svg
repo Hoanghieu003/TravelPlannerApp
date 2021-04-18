@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/32px/My/Grey/Line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="1">
+        <g id="Component/Navigation/Under" transform="translate(-289.000000, -12.000000)" stroke="#000000">
+            <g id="Icon/32px/My/Grey/Line" transform="translate(287.000000, 10.000000)">
+                <g transform="translate(2.000000, 2.000000)">
+                    <circle id="oval" fill-rule="nonzero" cx="14" cy="14" r="13.5"></circle>
+                    <path d="M14,5.5 C12.7625,5.5 11.6378184,6.00678833 10.8223034,6.82230339 C10.0067883,7.63781845 9.5,8.7625 9.5,10 C9.5,11.2375 10.0067883,12.3621816 10.8223034,13.1776966 C11.6378184,13.9932117 12.7625,14.5 14,14.5 C15.2375,14.5 16.3621816,13.9932117 17.1776966,13.1776966 C17.9932117,12.3621816 18.5,11.2375 18.5,10 C18.5,8.7625 17.9932117,7.63781845 17.1776966,6.82230339 C16.3621816,6.00678833 15.2375,5.5 14,5.5 Z" id="shape" fill-rule="nonzero"></path>
+                    <path d="M23.5454545,22.4848485 C23.5454545,19.6212121 17.5729167,18.2424242 14.530303,18.2424242 C11.4876894,18.2424242 5.51515152,19.6212121 5.51515152,22.4848485" id="Path" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+    "facebookPermission": [
+        "email",
+        "public_profile"
+    ]
+}

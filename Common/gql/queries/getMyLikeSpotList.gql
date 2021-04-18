@@ -1,0 +1,50 @@
+query getMyLikeSpotList(
+  $language: String!
+  $tag_code: Int
+  $order_type: Int
+  $limit: Int
+  $offset: Int
+) {
+  getMyLikeSpotList(
+    language: $language
+    tag_code: $tag_code
+    order_type: $order_type
+    limit: $limit
+    offset: $offset
+  ) {
+    result
+    count
+    spot {
+      code
+      is_confirm
+      review_total_score
+      rating_review_count
+      view_count
+      latitude
+      longitude
+      translations {
+        code
+        title_price
+        spot_name
+        language
+      }
+      tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+      images {
+        origin_path
+        url
+      }
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+  }
+}

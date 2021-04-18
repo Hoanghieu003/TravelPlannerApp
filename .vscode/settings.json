@@ -1,0 +1,87 @@
+{
+  // "editor.tabSize": 2, // Xài 1 tab 2 space.
+  // "editor.detectIndentation": false, // Phải tắt cái này không là cái
+  // // tabSize sẽ không có tác dụng
+  // "editor.rulers": [120], // Tạo ra cái vách ngăn 120 ký tự
+  // // để biết đường mà xuống dòng
+  // "files.insertFinalNewline": true, // Tự thêm newline mới vào cuối file
+  // "editor.fontFamily": "FiraCode-Retina",
+  // "editor.fontLigatures": true,
+  // "git.ignoreMissingGitWarning": true,
+  // "git.enableSmartCommit": true,
+  // "git.autofetch": true,
+  // "files.autoSave": "onWindowChange", // tự động save file
+  // "eslint.autoFixOnSave": true, // tự động sửa cho mã tuân theo style
+  // "eslint.packageManager": "yarn", // bạn nào không dùng yarn thì để mặc định
+  // "prettier.trailingComma": "es5", // tự động thêm dấu phẩy
+  // "prettier.semi": true, // tự động thêm dấu chấm phẩy
+  // "eslint.options": {
+  //   "parserOptions": {
+  //     "ecmaVersion": 6,
+  //     "sourceType": "module",
+  //     "ecmaFeatures": {
+  //       "jsx": true,
+  //       "modules": true
+  //     }
+  //   }
+  // },
+  // "workbench.colorTheme": "One Dark Pro",
+  // "editor.fontSize": 12,
+  // "workbench.activityBar.visible": true,
+  // "gitlens.advanced.messages": {
+  //   "suppressShowKeyBindingsNotice": true
+  // },
+  // "gitlens.defaultDateFormat": "dddd, MMMM Do YYYY, h:mm:ss a",
+  // "javascript.updateImportsOnFileMove.enabled": "always",
+  // "files.associations": {
+  //   "*.js": "javascriptreact"
+  // },
+  // "workbench.iconTheme": "vscode-icons",
+  // "editor.renderWhitespace": "all",
+  // "editor.renderControlCharacters": true,
+  // "window.menuBarVisibility": "toggle",
+  // "path-intellisense.extensionOnImport": true,
+  // "sync.gist": "f04068c123f8f4789408dc11d45bfa55",
+  // "sync.quietSync": true,
+  // "editor.formatOnType": true,
+  // "breadcrumbs.enabled": true,
+  // "emmet.includeLanguages": {
+  //   "javascript": "javascriptreact"
+  // },
+  // "terminal.integrated.shell.windows": "C:\\\\Program Files\\\\Git\\\\bin\\\\bash.exe",
+  // "terminal.integrated.shell.osx": "/bin/zsh",
+  // "git.confirmSync": false,
+  // "dart.lineLength": 120,
+  // "dart.debugSdkLibraries": true,
+  // "dart.flutterSdkPath": "/Users/phattran97/flutter",
+  // "sync.forceUpload": true,
+  // "editor.suggestSelection": "first",
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // "turboConsoleLog.logMessagePrefix": "Cuong ne",
+  // "turboConsoleLog.addSemicolonInTheEnd": true,
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "editor.formatOnSaveTimeout": 500,
+  // "editor.multiCursorModifier": "ctrlCmd",
+  // "window.zoomLevel": 0,
+  // "editor.formatOnSave": true,
+  // "prettier.singleQuote": true,
+  // "explorer.confirmDragAndDrop": false,
+  // "java.errors.incompleteClasspath.severity": "ignore",
+  // "java.configuration.checkProjectSettingsExclusions": false,
+  // "explorer.confirmDelete": false,
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[json]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[markdown]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": true,
+  //   "source.fixAll.eslint": true
+  // }
+}

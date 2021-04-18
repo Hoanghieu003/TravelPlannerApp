@@ -1,0 +1,5 @@
+mutation setMemberTag($tag_type: Int!, $tag_code: [Int]!) {
+  setMemberTag(tag_type: $tag_type, tag_code: $tag_code) {
+    tag_code
+  }
+}

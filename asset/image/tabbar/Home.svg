@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="52px" viewBox="0 0 30 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon/32px/Home/Grey</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="Component/Navigation/Under" transform="translate(-25.000000, -13.000000)" fill="#000000">
+            <g id="Icon/32px/Home/Grey" transform="translate(24.000000, 10.000000)">
+                <g transform="translate(1.000000, 3.000000)" id="Style">
+                    <path d="M17.1617947,0.786275489 C15.9499522,-0.26209183 14.0500478,-0.26209183 12.8382053,0.786275489 L0,12.4820223 L1.08165815,13.5 L4,10.548175 L4,24 C4,25.5403933 4.31048173,26 6,26 L24,26 C25.6895183,26 26,25.5403933 26,24 L26,10.548175 L28.996186,13.5 L30,12.4820223 L17.1617947,0.786275489 Z M12,25 L12,17 L18,17 L18,25 L12,25 Z M25,24 C25,24.5134644 24.5631728,25 24,25 L19,25 L19,16 L11,16 L11,25 L6,25 C5.43682724,25 5,24.5134644 5,24 L5,9.24216454 L14,1.2003415 C14.1914683,1.02433571 14.7281058,1 15,1 C15.2718942,1 15.8085317,1.02433571 16,1.2003415 L25,9.24216454 L25,24 Z" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+query getMeetFriendReplies($meet_friend_code: Int!, $page: Int, $count: Int) {
+  getMeetFriendReplies(meet_friend_code: $meet_friend_code, page: $page, count: $count) {
+    result
+    message
+    meetFriendReplies {
+      code
+      meet_friend_code
+      content
+      created_at
+      writer {
+        code
+        name
+        nickname
+        id
+        picture
+      }
+      childReplies {
+        code
+        parent_code
+        meet_friend_code
+        content
+        created_at
+        writer {
+          code
+          name
+          nickname
+          picture
+          id
+        }
+      }
+    }
+  }
+}

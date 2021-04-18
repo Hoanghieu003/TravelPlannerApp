@@ -1,0 +1,11 @@
+query getReviewUserCount($where: String!, $code: Int!) {
+  getReviewUserCount(where: $where, code: $code) {
+    result
+    count
+    members {
+      id
+      email
+      picture
+    }
+  }
+}

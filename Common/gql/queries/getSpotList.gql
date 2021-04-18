@@ -1,0 +1,88 @@
+query getSpotList(
+$search: String
+$is_confirm: Boolean
+$page: Int
+$limit: Int
+$tag_code: Int
+$offset: Int
+$isRecommend: Boolean
+$language: String
+$order_type: Int
+$reserveAbleOnly: Int
+$cityCode: Int
+$categoryCode: Int
+$exceptionCode: [Int]
+$include_default: Int
+$isAdminPage: Int
+) {
+	getSpotList(
+	search: $search
+	is_confirm: $is_confirm
+	page: $page
+	limit: $limit
+	tag_code: $tag_code
+	isRecommend: $isRecommend
+	offset: $offset
+	language: $language
+	order_type: $order_type
+	reserveAbleOnly: $reserveAbleOnly
+	cityCode: $cityCode
+	categoryCode: $categoryCode
+	exceptionCode: $exceptionCode
+	include_default: $include_default
+	isAdminPage: $isAdminPage
+	) {
+		result
+		count
+		spots {
+			code
+			is_confirm
+			review_total_score
+			rating_review_count
+			created_at
+			view_count
+			like_count
+			updated_at
+			spot_reserve {
+				code
+				spot_code
+				is_active
+			}
+			translations {
+				code
+				is_default
+				spot_code
+				spot_name
+				is_publish
+				price
+				title_price
+				language
+			}
+			register {
+				id
+				email
+				name
+				nickname
+				level
+				picture
+			}
+			tags {
+				code
+				type
+				country_code
+				name
+				language
+			}
+			like_members {
+				id
+				email
+				name
+				nickname
+			}
+			images {
+				origin_path
+				url
+			}
+		}
+	}
+}

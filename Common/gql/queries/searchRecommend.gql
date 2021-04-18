@@ -1,0 +1,99 @@
+query searchRecommend(
+  $blog_code: Int
+  $spot_code: Int
+  $language: String
+  $limit: Int
+) {
+  searchRecommend(
+    blog_code: $blog_code
+    spot_code: $spot_code
+    language: $language
+    limit: $limit
+  ) {
+    blogCount
+    blog {
+      code
+      updated_at
+      created_at
+
+      images {
+        code
+        origin_path
+      }
+
+      tags {
+        code
+        type
+        translations {
+          name
+          language
+        }
+      }
+
+      translations {
+        updated_at
+        created_at
+        code
+        title
+        sub_title
+        description
+        content
+        language
+      }
+
+      writer {
+        email
+        name
+        picture
+        introduce
+      }
+
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+
+    spotCount
+    spot {
+      code
+      is_confirm
+      created_at
+      updated_at
+      review_total_score
+      rating_review_count
+
+      translations {
+        spot_name
+        language
+      }
+
+      tags {
+        code
+        type
+        country_code
+        name
+        language
+      }
+
+      register {
+        name
+        nickname
+      }
+
+      images {
+        spot_code
+        origin_path
+      }
+
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+    }
+  }
+}

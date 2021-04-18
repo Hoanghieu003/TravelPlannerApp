@@ -1,0 +1,93 @@
+query getAdvertisementList(
+  $type: Int
+  $page: Int!
+  $languages: [String]
+  $limit: Int!
+  $order: String
+) {
+  getAdvertisementList(
+    type: $type
+    page: $page
+    languages: $languages
+    limit: $limit
+    order: $order
+  ) {
+    result
+    count
+    advertisements {
+      code
+      type
+      name
+      image
+      language
+      url
+      blog_code
+      spot_code
+      created_at
+      tags {
+        code
+        type
+        country {
+          code
+          country_code
+          name
+          language
+        }
+        country_code
+        is_recommend
+        translations(languages: $languages) {
+          code
+          tag_code
+          name
+          language
+        }
+      }
+      is_deleted
+      blog {
+        code
+        review_count
+        view_count
+        tags {
+          code
+          type
+          country_code
+          score
+          is_recommend
+          country {
+            code
+            country_code
+            name
+            language
+            created_at
+            updated_at
+          }
+        }
+        like_count
+      }
+      spot {
+        code
+        view_count
+        tags {
+          code
+          type
+          country_code
+        }
+        translations {
+          title_price
+          price
+        }
+      }
+      translations(languages: $languages) {
+        code
+        advertisement_code
+        name
+        title
+        language
+        image
+        url
+        description
+        optional_description
+      }
+    }
+  }
+}

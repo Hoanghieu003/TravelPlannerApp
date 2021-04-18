@@ -1,0 +1,14 @@
+query getMobileMainList($search: String, $type: Int!, $page: Int, $limit: Int) {
+  getMobileMainList(search: $search, type: $type, page: $page, limit: $limit) {
+    result
+    count
+
+    mobileMain {
+      code
+      type
+      subject
+      created_at
+      updated_at
+    }
+  }
+}

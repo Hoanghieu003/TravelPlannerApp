@@ -1,0 +1,84 @@
+query getMemberInfo(
+  $code: Int
+  $id: String
+  $language: String
+  $auth_code: Int
+  $include_spot_count: Boolean
+  $include_blog_count: Boolean
+) {
+  getMemberInfo(
+    code: $code
+    id: $id
+    language: $language
+    auth_code: $auth_code
+    include_spot_count: $include_spot_count
+    include_blog_count: $include_blog_count
+  ) {
+    result
+    spot_count
+    blog_count
+    member {
+      code
+      id
+      password
+      nickname
+      email
+      name
+      level
+      picture
+      introduce
+      birthday
+      created_at
+      social_type
+      social_infos {
+        code
+        member_code
+        type
+        social_id
+        email
+        created_at
+        updated_at
+      }
+      country {
+        code
+        country_code
+        name
+        language
+      }
+
+      home {
+        code
+        type
+        country_code
+        score
+
+        translations {
+          code
+          tag_code
+          name
+          language
+        }
+      }
+
+      member_tags {
+        code
+        member_code
+        tag_code
+
+        tag {
+          code
+          type
+          country_code
+          score
+
+          translations {
+            code
+            tag_code
+            name
+            language
+          }
+        }
+      }
+    }
+  }
+}

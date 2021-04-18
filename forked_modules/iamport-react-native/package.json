@@ -1,0 +1,73 @@
+{
+  "_from": "iamport-react-native",
+  "_id": "iamport-react-native@1.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-iqpQAtagpq7Hyb1tmLJek1+wmi2mU3M9JyH90Co7vGE8YSoZWBWCXifiBhGeOCCYghYK90X/I0UW12HtkyuU+A==",
+  "_location": "/iamport-react-native",
+  "_phantomChildren": {
+    "decode-uri-component": "0.2.0",
+    "split-on-first": "1.1.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "iamport-react-native",
+    "name": "iamport-react-native",
+    "escapedName": "iamport-react-native",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iamport-react-native/-/iamport-react-native-1.5.1.tgz",
+  "_shasum": "50eb894675e16672aabc0e5745b42c4f467ea36a",
+  "_spec": "iamport-react-native",
+  "_where": "/Users/trangthuanbinh3696/Desktop/Projects/APP_V4",
+  "author": {
+    "name": "Solee Deedee Choi"
+  },
+  "bugs": {
+    "url": "https://github.com/iamport/iamport-react-native/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
+    "react-native-webview": ">=7.4.0"
+  },
+  "deprecated": false,
+  "description": "리액트 네이티브용 아임포트 결제/본인인증 연동 라이브러리",
+  "devDependencies": {
+    "@babel/runtime": "^7.4.5",
+    "react": "^16.8.6",
+    "react-native": "^0.59.8"
+  },
+  "homepage": "https://github.com/iamport/iamport-react-native",
+  "keywords": [
+    "iamport",
+    "react",
+    "react-native"
+  ],
+  "license": "MIT",
+  "main": "./src/index.js",
+  "name": "iamport-react-native",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@babel/runtime": "*",
+    "prop-types": "*",
+    "query-string": "*",
+    "react-native-webview": ">=7.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamport/iamport-react-native.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.1"
+}

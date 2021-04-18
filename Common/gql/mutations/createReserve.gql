@@ -1,0 +1,143 @@
+mutation createReserve(
+  $spotCode: Int!
+  $spotName: String!
+  $name: String!
+  $country: String!
+  $email: String!
+  $social: String!
+  # $request: String
+  $reserveItem: String!
+  $reserveDate: String!
+  $platform: String!
+  $version: String
+  $telephone: String!
+  # $birthday: String
+  # $deliveryAddress: String
+  # $nationalityName: String
+  # $hotelName: String
+  # $flightNumber: String
+  # $gender: Int
+  $infos: [reservationInfoInput]
+) {
+  createReserve(
+    spotName: $spotName
+    spotCode: $spotCode
+    name: $name
+    country: $country
+    email: $email
+    social: $social
+    # request: $request
+    reserveItem: $reserveItem
+    reserveDate: $reserveDate
+    platform: $platform
+    version: $version
+    # birthday: $birthday
+    # deliveryAddress: $deliveryAddress
+    telephone: $telephone
+    # nationalityName: $nationalityName
+    # hotelName: $hotelName
+    # flightNumber: $flightNumber
+    # gender: $gender
+    infos: $infos
+  ) {
+    result
+    exim_fgkey
+    reserve {
+      code
+      member_code
+      spot_code
+      name
+      country
+      email
+      social
+      reserve_item
+      voucher_code
+      reserve_code
+      reserve_date
+      waiting_date
+      limit_payment
+      total_payment
+      order_number
+      status
+      payment_id
+      refund_id
+      refund_date
+      refund_payment
+      user_request
+      used
+      platform
+      telephone
+      birthday
+      delivery_address
+      nationality_name
+      hotel_name
+      flight_number
+      gender
+      created_at
+      updated_at
+      reserve_items {
+        ko_name
+        show_name
+        price
+        discount_price
+        count
+        __typename
+      }
+      member {
+        code
+        id
+        nickname
+        email
+        name
+        country_code
+        home_tag_code
+        password
+        level
+        picture
+        deny_login
+        is_email_auth
+        email_auth_code
+        email_auth_time
+        is_reset_password
+        social_type
+        password_auth_code
+        introduce
+        birthday
+        created_at
+        updated_at
+        country {
+          code
+          country_code
+          name
+          language
+          created_at
+          updated_at
+        }
+        home {
+          code
+          type
+          country_code
+          score
+          created_at
+          updated_at
+          country {
+            code
+            country_code
+            name
+            language
+            created_at
+            updated_at
+          }
+          translations {
+            code
+            tag_code
+            name
+            language
+            created_at
+            updated_at
+          }
+        }
+      }
+    }
+  }
+}

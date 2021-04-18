@@ -1,0 +1,109 @@
+mutation setMember(
+  $password: String
+  $nickname: String
+  $name: String
+  $picture: String
+  $travel: String
+  $introduce: String
+  $home_tag_code: Int
+  $country_code: String
+) {
+  setMember(
+    password: $password
+    nickname: $nickname
+    name: $name
+    picture: $picture
+    travel: $travel
+    introduce: $introduce
+    home_tag_code: $home_tag_code
+    country_code: $country_code
+  ) {
+    result
+    member {
+      code
+      id
+      nickname
+      email
+      name
+      country_code
+      home_tag_code
+      password
+      level
+      picture
+      deny_login
+      is_email_auth
+      email_auth_code
+      email_auth_time
+      is_reset_password
+      social_type
+      password_auth_code
+      introduce
+      birthday
+      created_at
+      updated_at
+      country {
+        code
+        country_code
+        name
+        language
+        created_at
+        updated_at
+      }
+      home {
+        code
+        type
+        country_code
+        score
+        created_at
+        updated_at
+        country {
+          code
+          country_code
+          name
+          language
+          created_at
+          updated_at
+        }
+        translations {
+          code
+          tag_code
+          name
+          language
+          created_at
+          updated_at
+        }
+      }
+      member_tags {
+        code
+        member_code
+        tag_code
+        created_at
+        updated_at
+        tag {
+          code
+          type
+          country_code
+          score
+          created_at
+          updated_at
+          country {
+            code
+            country_code
+            name
+            language
+            created_at
+            updated_at
+          }
+          translations {
+            code
+            tag_code
+            name
+            language
+            created_at
+            updated_at
+          }
+        }
+      }
+    }
+  }
+}

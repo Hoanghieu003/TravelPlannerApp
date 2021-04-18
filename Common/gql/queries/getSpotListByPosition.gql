@@ -1,0 +1,71 @@
+query getSpotListByPosition(
+  $east: Float!
+  $west: Float!
+  $south: Float!
+  $north: Float!
+  $search: String
+  $offset: Int
+  $limit: Int
+  $language: String
+) {
+  getSpotListByPosition(
+    east: $east
+    west: $west
+    south: $south
+    north: $north
+    search: $search
+    offset: $offset
+    limit: $limit
+    language: $language
+  ) {
+    result
+    count
+
+    spots {
+      code
+      is_confirm
+      review_total_score
+      rating_review_count
+      latitude
+      longitude
+      view_count
+      translations {
+        code
+        spot_search_title
+        spot_code
+        spot_name
+        price
+        title_price
+        language
+      }
+      register {
+        id
+        email
+        name
+        nickname
+        level
+        picture
+      }
+      tags {
+        code
+        type
+        country_code
+
+        translations {
+          name
+          language
+        }
+      }
+      like_members {
+        id
+        email
+        name
+        nickname
+      }
+      images {
+        origin_path
+        url
+      }
+    }
+  }
+}

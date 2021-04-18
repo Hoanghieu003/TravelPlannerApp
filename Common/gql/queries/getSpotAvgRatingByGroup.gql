@@ -1,0 +1,9 @@
+query getAvgRatingByGroup($where: String!, $code: Int!) {
+  getAvgRatingByGroup(where: $where, code: $code) {
+    result
+    avgList {
+      rating_AVG
+      language
+    }
+  }
+}

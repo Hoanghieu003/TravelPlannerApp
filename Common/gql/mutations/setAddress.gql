@@ -1,0 +1,5 @@
+mutation setAddress($address: String!) {
+  setAddress(address: $address) {
+    address
+  }
+}

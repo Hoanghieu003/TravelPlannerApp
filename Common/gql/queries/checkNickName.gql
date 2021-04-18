@@ -1,0 +1,6 @@
+query checkNickName($nickname: String!) {
+  checkNickName(nickname: $nickname) {
+    code
+    nickname
+  }
+}

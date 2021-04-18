@@ -1,0 +1,12 @@
+query getCountryList($language: String) {
+  getCountryList(language: $language) {
+    result
+    count
+    countrys {
+      code
+      country_code
+      name
+      language
+    }
+  }
+}

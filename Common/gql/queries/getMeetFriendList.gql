@@ -1,0 +1,15 @@
+query getMeetFriendList($page: Int, $count: Int, $language: String, $mine: Boolean) {
+  getMeetFriendList(page: $page, count: $count, language: $language, mine: $mine) {
+    result
+    count
+    message
+    meetFriends {
+      code
+      title
+      view_count
+      replies_count
+      created_at
+      updated_at
+    }
+  }
+}

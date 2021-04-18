@@ -1,0 +1,6 @@
+mutation removeMeetFriendReply($code: Int!) {
+	removeMeetFriendReply(code: $code) {
+		result
+		message
+	}
+}

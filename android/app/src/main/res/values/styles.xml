@@ -1,0 +1,18 @@
+<resources>
+<!--  &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--    &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--</style>-->
+
+<!--&lt;!&ndash;  <style name="SplashTheme" parent="AppTheme">&ndash;&gt;-->
+<!--&lt;!&ndash;    <item name="android:windowBackground">@drawable/splash_screen</item>&ndash;&gt;-->
+<!--&lt;!&ndash;  </style>&ndash;&gt;-->
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+  </style>
+
+  <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+  </style>
+
+</resources>

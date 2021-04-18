@@ -1,0 +1,13 @@
+query getTag($code: Int!, $language: String) {
+  getTag(code: $code, language: $language) {
+    code
+    type
+    score
+    country_code
+    translations {
+      tag_code
+      name
+      language
+    }
+  }
+}

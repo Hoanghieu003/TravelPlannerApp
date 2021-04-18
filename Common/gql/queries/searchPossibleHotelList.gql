@@ -1,0 +1,45 @@
+query searchPossibleHotelList($checkIn: String!, $checkOut: String!, $adultCount: Int!, $tags: [Int], $languages: [String!] ) {
+	searchPossibleHotelList(checkIn: $checkIn, checkOut: $checkOut, adultCount: $adultCount, tags: $tags) {
+		count,
+		hotels {
+			code
+			is_publish
+			like_count
+			created_at
+			updated_at
+			view_count
+			translations(languages: $languages) {
+				code
+				spot_code
+				language
+				spot_name
+				spot_search_title
+				title_price
+				price
+			}
+			images(isMain: true) {
+				code
+				url
+				main_image
+				origin_path
+			}
+			tags {
+				code
+				type
+				country_code
+				translations(languages: $languages) {
+					code
+					name
+					language
+				}
+			}
+			options {
+				code
+				spot_code
+				name
+				price
+				discount_price
+			}
+		}
+	}
+}
